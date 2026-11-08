@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oxford Learning Centre — ingliz tili, IELTS va rus tili, Toshkent</title>
+<meta name="description" content="Oxford Learning Centre: ingliz tili (General English), IELTS Full Course, individual, korporativ va rus tili kurslari. Oybek va Maksim Gorkiy filiallari. Birinchi dars bepul. ☎ (95) 145-1-145">
+<meta property="og:title" content="Oxford Learning Centre, Toshkent">
+<meta property="og:description" content="Ingliz tili, IELTS, rus tili. Birinchi dars bepul.">
+<meta property="og:image" content="assets/ig/olc-hq-post1.jpg">
+<meta name="theme-color" content="#000000">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="assets/crest-white.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
+<style>
+/* Tokenlar — markazning o'z postlaridan: qora fon, sariq (#FFC400), to'q yashil-ko'k (#0E3A40), oq.
+   Sarlavhalar postlardagi kabi tor va qalin (Archivo, wdth 62, 900). */
+:root{
+  --black:#000; --coal:#121212; --line:#2A2A2A;
+  --yellow:#FFC400; --teal:#0E3A40; --white:#fff; --grey:#A3A3A3;
+  --ease:cubic-bezier(.2,.8,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Archivo",system-ui,sans-serif;background:var(--black);color:var(--white);-webkit-font-smoothing:antialiased;line-height:1.55;font-size:17px;overflow-x:hidden}
+a{color:inherit}
+img,video{display:block;max-width:100%}
+button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+::selection{background:var(--yellow);color:var(--black)}
+.wrap{width:min(1280px,92vw);margin-inline:auto}
+.cond{font-stretch:62%;font-weight:900;text-transform:uppercase;line-height:.88;letter-spacing:-.005em}
+.y{color:var(--yellow)}
+h2.cond{font-size:clamp(54px,8vw,124px)}
+.split h2.cond{font-size:clamp(48px,5.4vw,88px)}
+[id]{scroll-margin-top:90px}
+.lede{max-width:54ch;color:var(--grey);font-size:18px;margin-top:22px}
+section{padding:clamp(90px,11vw,160px) 0}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 28px;border-radius:999px;font-weight:800;font-size:16px;border:2px solid transparent;cursor:pointer;text-decoration:none;transition:transform .25s var(--ease),background .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn-y{background:var(--yellow);color:var(--black)}
+.btn-w{background:var(--white);color:var(--black)}
+.btn-o{border-color:currentColor;background:transparent}
+.btn svg{width:18px;height:18px}
+
+/* ---------- NAV ---------- */
+.nav{position:fixed;inset:0 0 auto;z-index:50;transition:background .3s,backdrop-filter .3s}
+.nav.solid{background:rgba(0,0,0,.82);backdrop-filter:blur(14px)}
+.nav .in{display:flex;align-items:center;justify-content:space-between;gap:24px;height:84px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{height:46px;width:auto}
+.brand b{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:24px;letter-spacing:.06em;line-height:1}
+.brand small{display:block;font-size:10px;letter-spacing:.32em;color:var(--grey);margin-top:4px}
+.nav ul{display:flex;gap:30px;list-style:none;font-weight:600;font-size:15px}
+.nav ul a{text-decoration:none;color:#D6D6D6}
+.nav ul a:hover{color:var(--yellow)}
+.nav .right{display:flex;align-items:center;gap:18px}
+.nav .tel{font-weight:700;text-decoration:none;white-space:nowrap}
+.nav .btn{padding:12px 22px;font-size:15px}
+.burger{display:none;background:none;border:1.5px solid #555;border-radius:999px;padding:9px 16px;font-weight:700;cursor:pointer}
+@media(max-width:1080px){
+  .nav ul,.nav .tel{display:none}
+  .burger{display:block}
+  .nav.open{background:#000}
+  .nav.open ul{display:flex;flex-direction:column;position:absolute;top:84px;left:0;right:0;background:#000;padding:20px 4vw 30px;gap:18px;font-size:22px;border-bottom:1px solid var(--line)}
+}
+@media(max-width:560px){.nav .btn{display:none}}
+
+/* ---------- HERO: uchta haqiqiy dars videosi ---------- */
+.hero{height:100svh;min-height:640px;display:flex;position:relative;background:#000}
+.panel{flex:1;position:relative;overflow:hidden;transition:flex .7s var(--ease);text-decoration:none;display:block}
+.panel + .panel{border-left:1px solid rgba(255,255,255,.12)}
+.panel video,.panel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.04);transition:transform 1.2s var(--ease),filter .6s}
+.panel::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,.45) 50%,rgba(0,0,0,.94) 78%,#000 100%)}
+.panel .txt{position:absolute;left:clamp(18px,2.5vw,36px);right:clamp(18px,2.5vw,36px);bottom:clamp(26px,5vh,56px);z-index:2}
+.panel .word{font-size:clamp(54px,7.4vw,128px);display:block;transform:translateY(105%);animation:rise 1s var(--ease) forwards}
+.panel .sub{display:block;max-width:30ch;margin-top:14px;font-size:16px;color:#E0E0E0;opacity:0;animation:fade .8s .9s forwards}
+.panel:nth-of-type(2) .word{animation-delay:.12s;color:var(--yellow)}
+.panel:nth-of-type(3) .word{animation-delay:.24s}
+.panel .clip{overflow:hidden;display:block}
+@keyframes rise{to{transform:none}}
+@keyframes fade{to{opacity:1}}
+@media(hover:hover) and (min-width:900px){
+  .hero:hover .panel{flex:.8}
+  .hero .panel:hover{flex:1.5}
+  .hero .panel:hover video{transform:scale(1)}
+}
+.hero-badge{position:absolute;z-index:3;top:110px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:12px;background:rgba(0,0,0,.55);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.18);padding:10px 18px 10px 12px;border-radius:999px;font-weight:600;font-size:15px;white-space:nowrap}
+.hero-badge i{width:10px;height:10px;border-radius:50%;background:var(--yellow);box-shadow:0 0 0 0 rgba(255,196,0,.7);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 12px rgba(255,196,0,0)}100%{box-shadow:0 0 0 0 rgba(255,196,0,0)}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media(max-width:899px){
+  .hero{flex-direction:column;height:auto;min-height:0}
+  .panel{height:62svh;min-height:420px}
+  .panel:nth-of-type(n+2){height:44svh;min-height:320px}
+  .panel + .panel{border-left:0;border-top:1px solid rgba(255,255,255,.12)}
+  .hero-badge{top:100px;font-size:13px}
+}
+
+/* ---------- Taklif lentasi ---------- */
+.offer{background:var(--yellow);color:var(--black)}
+.offer .in{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:26px 0;flex-wrap:wrap}
+.offer p{font-stretch:75%;font-weight:800;font-size:clamp(20px,2.2vw,30px);line-height:1.15}
+.offer .btn{background:var(--black);color:var(--yellow)}
+
+/* ---------- Raqamlar ---------- */
+.numbers{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.numbers div{padding:36px 28px 34px 0}
+.numbers div + div{padding-left:28px;border-left:1px solid var(--line)}
+.numbers b{display:block;font-stretch:62%;font-weight:900;font-size:clamp(48px,5.4vw,82px);line-height:1}
+.numbers span{color:var(--grey);font-size:15px}
+
+
+/* ---------- Kurslar ---------- */
+.course{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(30px,6vw,96px);align-items:center;padding:clamp(50px,7vw,90px) 0;border-top:1px solid var(--line)}
+.course:nth-of-type(even) .media{order:2}
+.media{position:relative;border-radius:18px;overflow:hidden;background:var(--coal);aspect-ratio:4/5}
+.media img,.media video{width:100%;height:100%;object-fit:cover}
+.media.tall{aspect-ratio:9/14}
+.media .tag{position:absolute;left:16px;top:16px;background:rgba(0,0,0,.6);backdrop-filter:blur(8px);padding:7px 14px;border-radius:999px;font-size:13px;font-weight:700}
+.course h3{font-size:clamp(56px,7vw,110px)}
+.course h3 small{display:block;font-size:.42em;color:var(--yellow);margin-top:10px;line-height:1}
+.course .desc{font-size:19px;color:#D0D0D0;max-width:46ch;margin:26px 0 26px}
+.facts{list-style:none;display:grid;gap:0;margin-bottom:34px;max-width:520px}
+.facts li{display:grid;grid-template-columns:150px 1fr;gap:18px;padding:14px 0;border-top:1px solid var(--line);font-size:16px}
+.facts li:last-child{border-bottom:1px solid var(--line)}
+.facts li span{color:var(--grey)}
+.facts li b{font-weight:700}
+@media(max-width:860px){.course{grid-template-columns:1fr}.course:nth-of-type(even) .media{order:0}.media{max-width:520px}.facts li{grid-template-columns:120px 1fr}}
+
+/* ---------- Video devor ---------- */
+.reels-head{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap}
+.arrows{display:flex;gap:10px}
+.arrows button{width:58px;height:58px;border-radius:50%;border:1.5px solid #444;background:none;cursor:pointer;display:grid;place-items:center}
+.arrows button:hover{border-color:var(--yellow);color:var(--yellow)}
+.track{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:50px 4vw 10px;scrollbar-width:none;cursor:grab}
+.track::-webkit-scrollbar{display:none}
+.track.drag{cursor:grabbing;scroll-snap-type:none}
+.reel{flex:none;width:clamp(240px,22vw,310px);scroll-snap-align:start;text-decoration:none;color:var(--white)}
+.reel .v{aspect-ratio:9/16;border-radius:16px;overflow:hidden;position:relative;background:var(--coal)}
+.reel video,.reel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.reel .v::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(0,0,0,.7));pointer-events:none}
+.reel .ig{position:absolute;right:12px;bottom:12px;z-index:2;display:flex;align-items:center;gap:6px;font-size:13px;font-weight:700;background:rgba(0,0,0,.55);padding:7px 12px;border-radius:999px;opacity:0;transition:opacity .25s}
+.reel:hover .ig,.reel:focus-visible .ig{opacity:1}
+.reel h4{font-size:17px;font-weight:700;margin-top:14px;line-height:1.3}
+.reel p{font-size:14px;color:var(--grey);margin-top:4px}
+
+/* ---------- Test (placement test) ---------- */
+.split{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(30px,6vw,90px);align-items:start}
+@media(max-width:900px){.split{grid-template-columns:1fr}}
+.pt{margin-top:50px;background:var(--coal);border:1px solid var(--line);border-radius:20px;overflow:hidden;max-width:1060px}
+.pt-top{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px clamp(20px,3vw,36px);border-bottom:1px solid var(--line);font-size:14px;color:var(--grey);flex-wrap:wrap}
+.pt-top[hidden],.pt-bar[hidden]{display:none}
+.pt-sec{display:flex;gap:6px;flex-wrap:wrap}
+.pt-sec span{padding:6px 12px;border-radius:999px;border:1px solid var(--line);font-weight:600}
+.pt-sec span.done{color:var(--white);border-color:#444}
+.pt-sec span.on{background:var(--white);color:#000;border-color:var(--white)}
+.pt-meta{display:flex;gap:18px;font-variant-numeric:tabular-nums;font-weight:600}
+.pt-bar{height:3px;background:#222}
+.pt-bar i{display:block;height:100%;width:0;background:var(--yellow);transition:width .4s var(--ease)}
+.pt-body{padding:clamp(24px,4vw,48px);min-height:460px}
+.pt-kicker{color:var(--yellow);font-weight:700;font-size:14px}
+.pt-q{font-size:clamp(24px,2.8vw,38px);font-weight:600;line-height:1.2;margin:12px 0 26px;max-width:40ch}
+.pt-q u{text-decoration:none;display:inline-block;min-width:2.4em;border-bottom:3px solid var(--yellow)}
+.pt-passage{background:#0A0A0A;border-left:3px solid var(--yellow);padding:18px 22px;border-radius:0 12px 12px 0;font-size:18px;line-height:1.65;margin:16px 0 4px;max-width:64ch;color:#E6E6E6}
+.pt-audio{display:flex;align-items:center;gap:16px;margin:18px 0 6px;flex-wrap:wrap}
+.pt-play{width:64px;height:64px;border-radius:50%;background:var(--yellow);color:#000;border:0;cursor:pointer;display:grid;place-items:center}
+.pt-play[disabled]{background:#333;color:#777;cursor:not-allowed}
+.pt-play.speaking{animation:pulse 1.4s infinite}
+.pt-opts{display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:900px}
+.pt-opt{display:flex;align-items:center;gap:14px;padding:15px 18px;border-radius:12px;border:1.5px solid #2E2E2E;background:#0A0A0A;cursor:pointer;font-size:18px;font-weight:500;text-align:left;transition:border-color .15s,background .15s}
+.pt-opt:hover{border-color:#666}
+.pt-opt kbd{font:inherit;font-size:13px;font-weight:700;width:28px;height:28px;border-radius:8px;background:#222;display:grid;place-items:center;flex:none;transition:.15s}
+.pt-opt[aria-checked="true"]{border-color:var(--yellow);background:#1C1704}
+.pt-opt[aria-checked="true"] kbd{background:var(--yellow);color:#000}
+.pt-foot{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-top:30px;flex-wrap:wrap;max-width:900px}
+.pt-link{background:none;border:0;color:var(--grey);text-decoration:underline;text-underline-offset:3px;cursor:pointer;font-size:15px;padding:8px 0}
+.pt-link:hover{color:var(--white)}
+.btn[disabled]{opacity:.35;cursor:not-allowed;transform:none}
+.pt-intro h3{font-size:clamp(28px,3.2vw,44px);font-weight:700;line-height:1.12;max-width:24ch}
+.pt-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:30px 0}
+.pt-cards div{border:1px solid var(--line);border-radius:14px;padding:18px;background:#0A0A0A}
+.pt-cards b{display:block;font-size:18px;margin:10px 0 4px}
+.pt-cards span{color:var(--grey);font-size:14px}
+.pt-cards svg{color:var(--yellow)}
+.pt-rules{display:flex;gap:10px 26px;flex-wrap:wrap;color:var(--grey);font-size:15px;margin-bottom:30px}
+.pt-rules b{color:var(--white)}
+.pt-res{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,4vw,60px)}
+.pt-lvl{font-stretch:62%;font-weight:900;font-size:clamp(130px,15vw,210px);line-height:.82;color:var(--yellow);margin-top:10px}
+.pt-lvlname{font-size:24px;font-weight:700;margin-top:10px}
+.pt-res p{color:#D0D0D0;margin-top:14px;max-width:46ch}
+.pt-kv{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:24px}
+.pt-kv div{border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.pt-kv span{display:block;color:var(--grey);font-size:13px}
+.pt-kv b{font-size:19px}
+.pt-skills h4{font-size:15px;color:var(--grey);font-weight:600;margin-bottom:14px}
+.pt-skill{display:grid;grid-template-columns:110px 1fr 44px;gap:14px;align-items:center;padding:12px 0;border-top:1px solid var(--line);font-weight:600}
+.pt-skill .tr{height:8px;border-radius:9px;background:#262626;overflow:hidden}
+.pt-skill .tr i{display:block;height:100%;background:var(--yellow);border-radius:9px;width:0;transition:width 1s var(--ease)}
+.pt-skill em{font-style:normal;text-align:right;font-variant-numeric:tabular-nums}
+.pt-scale{display:flex;margin-top:26px;border-radius:10px;overflow:hidden;border:1px solid var(--line)}
+.pt-scale span{flex:1;text-align:center;padding:9px 0;font-weight:700;font-size:14px;color:#777;border-left:1px solid var(--line)}
+.pt-scale span:first-child{border-left:0}
+.pt-scale span.on{background:var(--yellow);color:#000}
+.pt-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px;align-items:center}
+.pt-note{color:#8A8A8A;font-size:14px;margin-top:22px;max-width:70ch}
+.pt-review{margin-top:30px;display:none}
+.pt-review.show{display:block}
+.pt-review li{list-style:none;display:grid;grid-template-columns:28px 1fr;gap:12px;padding:14px 0;border-top:1px solid var(--line);font-size:15px}
+.pt-review li i{font-style:normal;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:800}
+.pt-review li i.ok{background:#3DDC84;color:#000}.pt-review li i.no{background:#FF5A5A;color:#000}
+.pt-review small{display:block;color:var(--grey);margin-top:4px}
+.form-level{display:none;background:#1C1704;border:1px solid var(--yellow);color:var(--yellow);border-radius:12px;padding:12px 14px;font-weight:700;font-size:15px}
+.form-level.show{display:block}
+@media(max-width:900px){.pt-res{grid-template-columns:1fr}.pt-cards{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){.pt-opts{grid-template-columns:1fr}}
+@media(max-width:600px){.pt-sec span:not(.on){display:none}.pt-skill{grid-template-columns:90px 1fr 40px}.pt-kv{grid-template-columns:1fr}}
+
+/* ---------- IELTS ---------- */
+.band{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,.8fr);gap:18px;margin-top:50px}
+.sliders{background:var(--coal);border:1px solid var(--line);border-radius:18px;padding:clamp(24px,3.5vw,40px);display:grid;gap:28px}
+.sl label{display:flex;justify-content:space-between;align-items:baseline;font-weight:700;margin-bottom:12px}
+.sl label b{font-stretch:62%;font-weight:900;font-size:40px;line-height:1;color:var(--yellow)}
+input[type=range]{width:100%;-webkit-appearance:none;appearance:none;height:6px;border-radius:9px;background:#333;outline-offset:6px}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:26px;height:26px;border-radius:50%;background:var(--yellow);border:5px solid #000;cursor:pointer}
+input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--yellow);border:5px solid #000;cursor:pointer}
+.score{background:var(--yellow);color:var(--black);border-radius:18px;padding:clamp(24px,3.5vw,40px);display:flex;flex-direction:column;justify-content:space-between;gap:20px}
+.score .n{font-size:clamp(140px,15vw,220px)}
+.score .btn{background:var(--black);color:var(--yellow)}
+@media(max-width:900px){.band{grid-template-columns:1fr}}
+
+/* ---------- Filiallar ---------- */
+.branches{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:50px}
+.branch{border-radius:18px;background:var(--teal);padding:clamp(26px,3.5vw,44px);display:flex;flex-direction:column;gap:24px;min-height:380px;position:relative;overflow:hidden}
+.branch:nth-child(2){background:var(--coal);border:1px solid var(--line)}
+.branch .m{display:flex;align-items:center;gap:12px;font-weight:600}
+.branch .m i{font-style:normal;width:40px;height:40px;border-radius:50%;background:#E3262E;display:grid;place-items:center;font-weight:900;font-size:18px}
+.branch h3{font-size:clamp(56px,6.5vw,100px)}
+.branch .row{display:flex;gap:12px;flex-wrap:wrap;margin-top:auto}
+.branch .phone{font-stretch:75%;font-weight:800;font-size:clamp(26px,2.6vw,36px);text-decoration:none}
+@media(max-width:800px){.branches{grid-template-columns:1fr}}
+
+/* ---------- Ariza ---------- */
+.apply{background:var(--yellow);color:var(--black)}
+.apply .split{align-items:center}
+.apply .lede{color:#2A2A2A}
+.form{background:var(--black);color:var(--white);border-radius:18px;padding:clamp(24px,3.5vw,44px);display:grid;gap:22px}
+.field{display:grid;gap:8px}
+.field>span{font-size:14px;font-weight:700;color:var(--grey)}
+.field input,.field select{background:transparent;border:0;border-bottom:1.5px solid #444;border-radius:0;padding:10px 0;font-size:20px;font-weight:600;color:var(--white)}
+.field select option{color:#000}
+.field input:focus,.field select:focus{outline:none;border-color:var(--yellow)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{cursor:pointer}
+.chips input{position:absolute;opacity:0;pointer-events:none}
+.chips span{display:inline-block;padding:10px 16px;border-radius:999px;border:1.5px solid #444;font-weight:600;font-size:15px;transition:.2s}
+.chips input:checked+span{background:var(--yellow);border-color:var(--yellow);color:var(--black)}
+.chips input:focus-visible+span{outline:3px solid var(--yellow);outline-offset:2px}
+fieldset{border:0;min-width:0}
+.status{display:none;padding:14px 16px;border-radius:12px;background:#1B1B1B;font-weight:600;font-size:15px}
+.status.show{display:block}
+.status a{color:var(--yellow)}
+@media(max-width:900px){.apply .split{grid-template-columns:1fr}}
+
+/* ---------- FAQ ---------- */
+.faq{margin-top:40px;max-width:940px}
+.faq details{border-top:1px solid var(--line)}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:24px;padding:26px 0;font-size:clamp(20px,2.2vw,28px);font-weight:700}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-weight:300;font-size:34px;line-height:.8;color:var(--yellow);transition:transform .3s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq p{padding-bottom:26px;color:var(--grey);max-width:68ch}
+
+/* ---------- Footer ---------- */
+footer{border-top:1px solid var(--line);padding:80px 0 30px}
+.fgrid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:30px;align-items:start}
+.fgrid h4{font-size:14px;color:var(--grey);font-weight:600;margin-bottom:12px}
+.fgrid a,.fgrid p{display:block;text-decoration:none;font-weight:600;margin-bottom:8px}
+.fgrid a:hover{color:var(--yellow)}
+.fbot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-top:60px;padding-top:24px;border-top:1px solid var(--line);color:var(--grey);font-size:14px}
+@media(max-width:800px){.fgrid{grid-template-columns:1fr 1fr}}
+
+.callfab{position:fixed;right:16px;bottom:16px;z-index:40;display:none;background:var(--yellow);color:#000;font-weight:800;text-decoration:none;padding:14px 20px;border-radius:999px;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+@media(max-width:800px){.callfab{display:block}}
+
+@media (prefers-reduced-motion:reduce){
+  *{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+  .panel .word{transform:none}.panel .sub{opacity:1}
+}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap in">
+    <a class="brand" href="#top" aria-label="Oxford Learning Centre — bosh sahifa">
+      <img src="assets/crest-white.png" alt="">
+      <span><b>OXFORD</b><small>LEARNING CENTRE</small></span>
+    </a>
+    <ul>
+      <li><a href="#kurslar">Kurslar</a></li>
+      <li><a href="#darslar">Darslardan lavhalar</a></li>
+      <li><a href="#test">Daraja testi</a></li>
+      <li><a href="#ielts">IELTS ball</a></li>
+      <li><a href="#filiallar">Filiallar</a></li>
+    </ul>
+    <div class="right">
+      <a class="tel" href="tel:+998951451145">(95) 145-1-145</a>
+      <a class="btn btn-y" href="#ariza">Bepul darsga yozilish</a>
+      <button class="burger" id="burger" aria-expanded="false">Menyu</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero" style="padding:0" aria-labelledby="h1">
+  <h1 id="h1" class="sr">Oxford Learning Centre — Toshkentda ingliz tili, IELTS va rus tili kurslari</h1>
+  <div class="hero-badge"><i></i>Yangi guruhlarga qabul ochiq · birinchi dars bepul</div>
+  <a class="panel" href="#c-english">
+    <video autoplay muted loop playsinline preload="auto" poster="assets/ig/olc-reel7.jpg" src="assets/video/olc-video-reel7.mp4"></video>
+    <span class="txt"><span class="clip"><span class="word cond">Ingliz tili</span></span><span class="sub">General English: noldan erkin muloqotgacha, professional ustozlar bilan.</span></span>
+  </a>
+  <a class="panel" href="#c-ielts">
+    <video autoplay muted loop playsinline preload="auto" poster="assets/ig/olc-reel8.jpg" src="assets/video/olc-video-reel8.mp4"></video>
+    <span class="txt"><span class="clip"><span class="word cond">IELTS</span></span><span class="sub">4 oylik intensiv Full Course. Intermediate daraja boshlash uchun yetarli.</span></span>
+  </a>
+  <a class="panel" href="#c-russian">
+    <video autoplay muted loop playsinline preload="auto" poster="assets/ig/olc-reel1.jpg" src="assets/video/olc-video-reel1.mp4"></video>
+    <span class="txt"><span class="clip"><span class="word cond">Rus tili</span></span><span class="sub">4 oyda erkin suhbatlasha oladigan darajaga chiqing.</span></span>
+  </a>
+</section>
+
+<div class="offer">
+  <div class="wrap in">
+    <p>Birinchi dars — mutlaqo bepul. Guruhlar soni cheklangan.</p>
+    <a class="btn" href="#ariza">Joy band qilish</a>
+  </div>
+</div>
+
+<!-- RAQAMLAR -->
+<section style="padding-bottom:0">
+  <div class="wrap">
+    <h2 class="cond">Til o'rganish<br><span class="y">tushunarli bo'lsin.</span></h2>
+    <p class="lede">Oxford Learning Centre — Toshkentdagi ingliz va rus tili markazi. Guruhda, yakka tartibda va kompaniyangiz ofisida dars beramiz. Darslarimizdan lavhalarni har kuni Instagramda ulashamiz.</p>
+    <div class="numbers" style="margin-top:60px">
+      <div><b>2</b><span>filial: Oybek va Maksim Gorkiy</span></div>
+      <div><b>0 so'm</b><span>birinchi sinov darsi</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- KURSLAR -->
+<section id="kurslar">
+  <div class="wrap">
+    <h2 class="cond">Kurslar</h2>
+
+    <article class="course" id="c-english">
+      <div class="media"><img src="assets/ig/olc-hq-post1.jpg" alt="Oxford Learning Centre posteri: Ingliz tili, IELTS — guruhlarga yoziling" loading="lazy"><span class="tag">Guruhda</span></div>
+      <div>
+        <h3 class="cond">Ingliz tili<small>General English</small></h3>
+        <p class="desc">Ingliz tilini professional ustozlar bilan o'rganing: grammatika, so'z boyligi, tinglab tushunish va eng muhimi — gapirish. Darajangiz birinchi darsda aniqlanadi.</p>
+        <ul class="facts">
+          <li><span>Kim uchun</span><b>Noldan boshlovchilardan yuqori darajagacha</b></li>
+          <li><span>Format</span><b>Guruhda, filialda</b></li>
+          <li><span>Birinchi dars</span><b>Bepul</b></li>
+        </ul>
+        <a class="btn btn-y" href="#ariza" data-pick="Ingliz tili">Ingliz tili kursiga yozilish</a>
+      </div>
+    </article>
+
+    <article class="course" id="c-ielts">
+      <div class="media tall"><video muted loop playsinline preload="none" poster="assets/ig/olc-reel8.jpg" src="assets/video/olc-video-reel8.mp4" data-autoplay></video><span class="tag">Oxfordning ustozlari</span></div>
+      <div>
+        <h3 class="cond">IELTS<small>Full Course — 4 oylik intensiv</small></h3>
+        <p class="desc">IELTS imtihoniga jiddiy tayyorlanmoqchi bo'lganlar uchun. Har bir bo'lim — Listening, Reading, Writing, Speaking — bo'yicha tizimli tayyorgarlik.</p>
+        <ul class="facts">
+          <li><span>Davomiyligi</span><b>4 oy, intensiv</b></li>
+          <li><span>Boshlash uchun</span><b>Intermediate daraja yetarli</b></li>
+          <li><span>Guruhlar</span><b>Joylar soni cheklangan</b></li>
+        </ul>
+        <a class="btn btn-y" href="#ariza" data-pick="IELTS">IELTS kursiga yozilish</a>
+      </div>
+    </article>
+
+    <article class="course" id="c-individual">
+      <div class="media"><img src="assets/ig/olc-hq-post2.jpg" alt="Oxford Learning Centre posteri: Individual ingliz tili" loading="lazy"><span class="tag">Yakka tartibda</span></div>
+      <div>
+        <h3 class="cond">Individual<small>Ingliz tili, ustoz bilan yakkama-yakka</small></h3>
+        <p class="desc">Ingliz tili darajasini tez oshirmoqchi bo'lganlar uchun. Shaxsiy yondashuv har doim samaraliroq: dastur va temp sizning maqsadingizga moslanadi.</p>
+        <ul class="facts">
+          <li><span>Format</span><b>1 o'quvchi — 1 ustoz</b></li>
+          <li><span>Kim uchun</span><b>Tez natija kerak bo'lganlar</b></li>
+        </ul>
+        <a class="btn btn-y" href="#ariza" data-pick="Individual">Individual darsga yozilish</a>
+      </div>
+    </article>
+
+    <article class="course" id="c-corporate">
+      <div class="media"><img src="assets/ig/olc-hq-post3.jpg" alt="Oxford Learning Centre posteri: Korporativ ingliz tili — ishxonangizni tark etmasdan o'rganing" loading="lazy"><span class="tag">Kompaniyalar uchun</span></div>
+      <div>
+        <h3 class="cond">Korporativ<small>Biznes ingliz tili ofisingizda</small></h3>
+        <p class="desc">Endi siz emas, biz sizga boramiz. Jamoangiz ish joyini tark etmay, vaqtini tejab, ofisning o'zida biznes ingliz tilini o'rganadi.</p>
+        <ul class="facts">
+          <li><span>Qayerda</span><b>Kompaniyangiz ofisida</b></li>
+          <li><span>Yo'nalish</span><b>Biznes ingliz tili</b></li>
+        </ul>
+        <a class="btn btn-y" href="#ariza" data-pick="Korporativ">Kompaniya uchun ariza</a>
+      </div>
+    </article>
+
+    <article class="course" id="c-russian">
+      <div class="media tall"><video muted loop playsinline preload="none" poster="assets/ig/olc-reel1.jpg" src="assets/video/olc-video-reel1.mp4" data-autoplay></video><span class="tag">Intensiv</span></div>
+      <div>
+        <h3 class="cond">Rus tili<small>Sozlashuv kursi — 4 oy</small></h3>
+        <p class="desc">Rus tilini tez va oson o'rganing. Qisqa muddatli so'zlashuv kursida atigi 4 oyda erkin suhbatlasha oladigan darajaga chiqasiz. Sizni tajribali va do'stona o'qituvchilar kutadi.</p>
+        <ul class="facts">
+          <li><span>Davomiyligi</span><b>4 oy</b></li>
+          <li><span>Natija</span><b>Erkin suhbat</b></li>
+          <li><span>Birinchi dars</span><b>Bepul</b></li>
+        </ul>
+        <a class="btn btn-y" href="#ariza" data-pick="Rus tili">Rus tili kursiga yozilish</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- DARSLARDAN LAVHALAR -->
+<section id="darslar" style="padding-top:0">
+  <div class="wrap reels-head">
+    <div>
+      <h2 class="cond">Darslardan<br><span class="y">lavhalar</span></h2>
+      <p class="lede">Ustozlarimiz Instagramda har kuni foydali ibora, qoida va maslahatlar ulashadi. Videoni bossangiz, Instagramda ovozi bilan ochiladi.</p>
+    </div>
+    <div class="arrows">
+      <button id="prev" aria-label="Oldingi videolar"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg></button>
+      <button id="next" aria-label="Keyingi videolar"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></button>
+    </div>
+  </div>
+  <div class="track" id="track"></div>
+  <div class="wrap" style="margin-top:40px">
+    <a class="btn btn-o" href="https://www.instagram.com/oxford_learning_center/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+      @oxford_learning_center
+    </a>
+  </div>
+</section>
+
+<!-- TEST -->
+<section id="test" style="background:#0A0A0A">
+  <div class="wrap">
+    <h2 class="cond">Ingliz tili<br><span class="y">daraja testi</span></h2>
+    <p class="lede">Adaptiv test: har bir javobingizga qarab keyingi savol qiyinroq yoki osonroq bo'ladi. Natijada CEFR darajangiz (A1–C1), taxminiy IELTS balingiz va har bir ko'nikma bo'yicha bahoni olasiz.</p>
+    <div class="pt" id="pt">
+      <div class="pt-top" id="ptTop" hidden>
+        <div class="pt-sec" id="ptSec"></div>
+        <div class="pt-meta"><span id="ptCount"></span><span id="ptTime">00:00</span></div>
+      </div>
+      <div class="pt-bar" id="ptBar" hidden><i></i></div>
+      <div class="pt-body" id="ptBody" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<!-- IELTS -->
+<section id="ielts">
+  <div class="wrap">
+    <h2 class="cond">IELTS overall<br><span class="y">band kalkulyatori</span></h2>
+    <p class="lede">To'rt bo'lim balini kiriting — umumiy ball IELTS'ning rasmiy yaxlitlash qoidasi bilan hisoblanadi.</p>
+    <div class="band">
+      <div class="sliders" id="sliders"></div>
+      <div class="score">
+        <span style="font-weight:700">Overall band score</span>
+        <div class="n cond" id="bandOut">6.5</div>
+        <p id="bandMsg" style="font-weight:600"></p>
+        <a class="btn" href="#ariza" data-pick="IELTS">IELTS Full Course'ga yozilish</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FILIALLAR -->
+<section id="filiallar" style="padding-top:0">
+  <div class="wrap">
+    <h2 class="cond">Filiallar</h2>
+    <div class="branches">
+      <article class="branch">
+        <div class="m"><i aria-hidden="true">M</i>Oybek metro bekati yonida</div>
+        <h3 class="cond">Oybek</h3>
+        <a class="phone" href="tel:+998951451145">(95) 145-1-145</a>
+        <div class="row">
+          <a class="btn btn-y" href="https://yandex.uz/maps/org/99036652228" target="_blank" rel="noopener">Xaritada ochish</a>
+          <a class="btn btn-o" href="tel:+998951451145">Qo'ng'iroq qilish</a>
+        </div>
+      </article>
+      <article class="branch">
+        <div class="m"><i aria-hidden="true">M</i>Maksim Gorkiy (Buyuk Ipak Yo'li) metro bekati yonida</div>
+        <h3 class="cond">Maksim Gorkiy</h3>
+        <a class="phone" href="tel:+998951959195">(95) 195-9-195</a>
+        <div class="row">
+          <a class="btn btn-y" href="https://yandex.uz/maps/org/49679251327" target="_blank" rel="noopener">Xaritada ochish</a>
+          <a class="btn btn-o" href="tel:+998951959195">Qo'ng'iroq qilish</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ARIZA -->
+<section class="apply" id="ariza">
+  <div class="wrap split">
+    <div>
+      <h2 class="cond">Bepul sinov<br>darsiga yoziling</h2>
+      <p class="lede">Ismingiz va raqamingizni qoldiring. Administrator qo'ng'iroq qilib, darajangizni aniqlash va qulay guruhni tanlash uchun vaqt kelishadi.</p>
+      <p style="margin-top:28px;font-weight:700;font-size:19px">Yoki hoziroq qo'ng'iroq qiling:<br><a href="tel:+998951451145">(95) 145-1-145</a> — Oybek<br><a href="tel:+998951959195">(95) 195-9-195</a> — Maksim Gorkiy</p>
+    </div>
+    <form class="form" id="form" novalidate>
+      <p class="form-level" id="levelNote"></p>
+      <input type="hidden" name="level" id="formLevel">
+      <label class="field"><span>Ismingiz</span><input name="name" autocomplete="name" required></label>
+      <label class="field"><span>Telefon raqamingiz</span><input name="phone" type="tel" autocomplete="tel" placeholder="+998" required></label>
+      <fieldset class="field"><span>Kurs</span>
+        <div class="chips" id="chips">
+          <label><input type="radio" name="course" value="Ingliz tili" checked><span>Ingliz tili</span></label>
+          <label><input type="radio" name="course" value="IELTS"><span>IELTS</span></label>
+          <label><input type="radio" name="course" value="Individual"><span>Individual</span></label>
+          <label><input type="radio" name="course" value="Korporativ"><span>Korporativ</span></label>
+          <label><input type="radio" name="course" value="Rus tili"><span>Rus tili</span></label>
+        </div>
+      </fieldset>
+      <label class="field"><span>Filial</span>
+        <select name="branch"><option>Oybek</option><option>Maksim Gorkiy</option><option>Farqi yo'q</option></select>
+      </label>
+      <button class="btn btn-y" type="submit">Arizani yuborish</button>
+      <p class="status" id="status" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="wrap">
+    <h2 class="cond">Savollar</h2>
+    <div class="faq">
+      <details><summary>Birinchi dars haqiqatan bepulmi?</summary><p>Ha. Birinchi sinov darsi mutlaqo bepul: ustoz bilan tanishasiz, darajangiz aniqlanadi va o'zingizga mos guruhni tanlaysiz.</p></details>
+      <details><summary>Kurs narxi qancha?</summary><p>Narx kurs turi va formatiga bog'liq. Aniq narxni bilish uchun (95) 145-1-145 (Oybek) yoki (95) 195-9-195 (Maksim Gorkiy) raqamlariga qo'ng'iroq qiling yoki ariza qoldiring.</p></details>
+      <details><summary>IELTS kursiga qaysi darajadan kirish mumkin?</summary><p>IELTS Full Course'ni boshlash uchun Intermediate daraja yetarli. Darajangiz pastroq bo'lsa, avval General English kursida tayyorlanasiz.</p></details>
+      <details><summary>Ofisimizga kelib dars o'tasizlarmi?</summary><p>Ha — korporativ dasturda ustozlarimiz kompaniyangiz ofisiga borib, jamoangizga biznes ingliz tilini o'rgatadi.</p></details>
+      <details><summary>Rus tilini qancha vaqtda o'rganish mumkin?</summary><p>Sozlashuv kursi 4 oy davom etadi va erkin suhbatlasha olish darajasiga olib chiqishga mo'ljallangan.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div><img src="assets/logo-white.png" alt="Oxford Learning Centre" style="height:120px;width:auto"></div>
+      <div><h4>Oybek</h4><a href="tel:+998951451145">(95) 145-1-145</a><a href="https://yandex.uz/maps/org/99036652228" target="_blank" rel="noopener">Xaritada</a></div>
+      <div><h4>Maksim Gorkiy</h4><a href="tel:+998951959195">(95) 195-9-195</a><a href="https://yandex.uz/maps/org/49679251327" target="_blank" rel="noopener">Xaritada</a></div>
+      <div><h4>Ijtimoiy tarmoqlar</h4><a href="https://www.instagram.com/oxford_learning_center/" target="_blank" rel="noopener">Instagram</a><a href="https://t.me/OxfordChannel" target="_blank" rel="noopener">Telegram kanal</a></div>
+    </div>
+    <div class="fbot"><span>© <span id="yr"></span> Oxford Learning Centre</span><span>Konsept-dizayn — rasmiy sayt emas</span></div>
+  </div>
+</footer>
+
+<a class="callfab" href="tel:+998951451145">Qo'ng'iroq qilish</a>
+
+<script>
+/* ===== SOZLAMALAR =====
+   FORM_ENDPOINT — arizalarni qabul qiladigan server manzili (masalan, arizani Telegram botga uzatuvchi backend).
+   Bo'sh bo'lsa, ariza yuborilmaydi va foydalanuvchiga qo'ng'iroq qilish taklif qilinadi. */
+const FORM_ENDPOINT = "";
+
+/* Instagram reels — video va muqova fayllari assets/ ichida */
+const REELS = [
+  {id:"DezhMI5u81W", n:3, t:"Bozorda ishlatiladigan iboralar", d:"Bazar phrases — ingliz tilida"},
+  {id:"De11ThiilVI", n:2, t:"Speaking: free4talk.com sayti", d:"Gapirishni mashq qilish uchun sayt"},
+  {id:"Dew8kdViK2c", n:4, t:"Rus tili ustozimiz Miss Zebo", d:"Ustozimiz o'zi haqida", still:true},
+  {id:"Deldbv-CPKZ", n:7, t:"Look at that beautiful sunset", d:"Darsdan lavha"},
+  {id:"Det4bcSiSVD", n:5, t:"\"Narsa\" ingliz tilida", d:"Kundalik ibora"},
+  {id:"Dehd1TXigIC", n:8, t:"Oxfordning ustozlari", d:"IELTS Full Course — 4 oylik intensiv"},
+  {id:"DeeiatOi_jn", n:9, t:"Qabul boshlandi", d:"Oybek filialida ingliz tili guruhlari"},
+  {id:"De9mB0wCA__", n:1, t:"Intensiv rus tili", d:"4 oyda erkin suhbat"},
+];
+/* ====================== */
+
+const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+$('#yr').textContent = new Date().getFullYear();
+
+// nav
+const nav = $('#nav');
+const onScroll = () => nav.classList.toggle('solid', scrollY > 40);
+addEventListener('scroll', onScroll, {passive:true}); onScroll();
+$('#burger').onclick = () => { const o = nav.classList.toggle('open'); $('#burger').setAttribute('aria-expanded', o); };
+$$('.nav ul a').forEach(a => a.onclick = () => nav.classList.remove('open'));
+
+// reels
+$('#track').innerHTML = REELS.map(r => `
+  <a class="reel" href="https://www.instagram.com/oxford_learning_center/reel/${r.id}/" target="_blank" rel="noopener">
+    <div class="v">${r.still ? `<img src="assets/ig/olc-reel${r.n}.jpg" alt="" loading="lazy">` : `<video muted loop playsinline preload="none" poster="assets/ig/olc-reel${r.n}.jpg" src="assets/video/olc-video-reel${r.n}.mp4" data-autoplay></video>`}
+      <span class="ig">Instagramda ochish ↗</span></div>
+    <h4>${r.t}</h4><p>${r.d}</p>
+  </a>`).join('');
+
+// videolar faqat ko'rinib turganda o'ynaydi (trafik va batareya tejaladi)
+const vio = new IntersectionObserver(es => es.forEach(e => {
+  const v = e.target;
+  if (e.isIntersecting && !reduce) { v.preload = 'auto'; v.play().catch(() => {}); } else v.pause();
+}), {threshold: .35});
+$$('video[data-autoplay], .hero video').forEach(v => vio.observe(v));
+if (reduce) $$('.hero video').forEach(v => { v.removeAttribute('autoplay'); v.pause(); });
+
+// trek: strelkalar va sichqoncha bilan sudrash
+const track = $('#track');
+const step = () => track.querySelector('.reel').offsetWidth + 18;
+$('#next').onclick = () => track.scrollBy({left: step() * 2, behavior: 'smooth'});
+$('#prev').onclick = () => track.scrollBy({left: -step() * 2, behavior: 'smooth'});
+let down = false, sx = 0, sl = 0, moved = false;
+track.addEventListener('pointerdown', e => { if (e.pointerType !== 'mouse') return; down = true; moved = false; sx = e.clientX; sl = track.scrollLeft; });
+addEventListener('pointermove', e => { if (!down) return; const dx = e.clientX - sx; if (Math.abs(dx) > 5) { moved = true; track.classList.add('drag'); } track.scrollLeft = sl - dx; });
+addEventListener('pointerup', () => { down = false; track.classList.remove('drag'); });
+track.addEventListener('click', e => { if (moved) { e.preventDefault(); moved = false; } }, true);
+track.addEventListener('dragstart', e => e.preventDefault());
+
+// kursni formada belgilash
+function pickCourse(c) {
+  const r = $(`#chips input[value="${c}"]`); if (r) r.checked = true;
+  $('#ariza').scrollIntoView({behavior: reduce ? 'auto' : 'smooth'});
+}
+$$('[data-pick]').forEach(b => b.addEventListener('click', e => { e.preventDefault(); pickCourse(b.dataset.pick); }));
+
+// ================= DARAJA TESTI (adaptiv placement test) =================
+// Har bir savol: s — bo'lim (g grammatika, v lug'at, r o'qish, l tinglash), L — qiyinlik (1=A1 … 5=C1),
+// o[0] — to'g'ri javob (ekranda variantlar aralashtiriladi), p — o'qish matni, a — tinglash matni.
+const BANK = [
+  // Grammatika
+  {s:'g',L:1,q:'They ___ from Tashkent.',o:['are','is','am','be']},
+  {s:'g',L:1,q:'___ you like coffee?',o:['Do','Does','Are','Is']},
+  {s:'g',L:1,q:'There ___ two books on the table.',o:['are','is','be','has']},
+  {s:'g',L:1,q:'My sister ___ in a bank.',o:['works','work','working','is work']},
+  {s:'g',L:2,q:'I ___ to the cinema yesterday.',o:['went','go','gone','going']},
+  {s:'g',L:2,q:'She is ___ than her brother.',o:['taller','tall','tallest','more tall']},
+  {s:'g',L:2,q:'We ___ dinner when the phone rang.',o:['were having','had','have','are having']},
+  {s:'g',L:2,q:"I've never ___ to London.",o:['been','gone','went','be']},
+  {s:'g',L:3,q:'If it rains tomorrow, we ___ at home.',o:['will stay','stay','would stay','stayed']},
+  {s:'g',L:3,q:'She has lived here ___ 2015.',o:['since','for','from','during']},
+  {s:'g',L:3,q:'The museum ___ in 1890.',o:['was built','built','has built','is building']},
+  {s:'g',L:3,q:"I'm not used to ___ up so early.",o:['getting','get','got','have got']},
+  {s:'g',L:4,q:'If I ___ about the meeting, I would have come.',o:['had known','knew','have known','would know']},
+  {s:'g',L:4,q:'He denied ___ the money.',o:['taking','to take','take','to have took']},
+  {s:'g',L:4,q:'By next June, she ___ her degree.',o:['will have finished','will finish','finishes','has finished']},
+  {s:'g',L:4,q:'You ___ have told me earlier — I could have helped.',o:['should','must','can','would rather']},
+  {s:'g',L:5,q:'Hardly ___ the station when the train left.',o:['had I reached','I had reached','I reached','did I reached']},
+  {s:'g',L:5,q:"It's high time we ___ a decision.",o:['made','make','will make','have made']},
+  {s:'g',L:5,q:'Not only ___ late, but he also forgot the documents.',o:['was he','he was','he is','did he']},
+  {s:'g',L:5,q:'___ the circumstances, the result was quite impressive.',o:['Given','Giving','To give','Having given to']},
+  // Lug'at
+  {s:'v',L:1,q:'Which word means the opposite of "cold"?',o:['hot','cool','wet','slow']},
+  {s:'v',L:1,q:'Which word is a fruit?',o:['apple','chair','bread','river']},
+  {s:'v',L:1,q:'I brush my ___ every morning.',o:['teeth','hands','shoes','books']},
+  {s:'v',L:2,q:'My flight was ___ because of the snow.',o:['cancelled','stopped','finished','closed']},
+  {s:'v',L:2,q:"I'd like to ___ a table for two, please.",o:['book','write','take','hold on']},
+  {s:'v',L:2,q:"The shop is ___ on Sundays, so we can't go in.",o:['closed','empty','busy','free']},
+  {s:'v',L:3,q:'Could you ___ me some money until Friday?',o:['lend','borrow','owe','give back']},
+  {s:'v',L:3,q:'The film was so ___ that I fell asleep.',o:['boring','bored','exciting','interested']},
+  {s:'v',L:3,q:'He decided to ___ smoking for his health.',o:['give up','give in','give out','give away']},
+  {s:'v',L:4,q:'The new policy had a significant ___ on sales.',o:['impact','affect','result','cause']},
+  {s:'v',L:4,q:'She was ___ for the job because she lacked experience.',o:['turned down','turned up','turned over','turned in']},
+  {s:'v',L:4,q:'The evidence was ___: everyone agreed he was guilty.',o:['conclusive','conclusion','concluded','conclusively']},
+  {s:'v',L:5,q:'"Ubiquitous" means:',o:['found everywhere','extremely rare','very old','dangerous']},
+  {s:'v',L:5,q:'His argument was ___ — nobody could find a single flaw in it.',o:['watertight','waterlogged','watershed','waterfront']},
+  {s:'v',L:5,q:'The company is trying to ___ costs without cutting jobs.',o:['rein in','rein out','run up','put across']},
+  // O'qish
+  {s:'r',L:1,p:'My name is Lola. I am twelve years old. I live in Samarkand with my mother, my father and my two brothers.',q:'How many brothers does Lola have?',o:['Two','One','Three','Twelve']},
+  {s:'r',L:2,p:"Hi Aziz, I can't come to football on Saturday because my grandmother is visiting us. Can we play on Sunday afternoon instead? — Timur",q:"Why can't Timur play on Saturday?",o:['His grandmother is visiting.','He is ill.','He has to study.','The game is on Sunday morning.']},
+  {s:'r',L:3,p:'The city library will be closed for repairs from 3 to 10 May. During this time, books can be returned to the box outside the main entrance. Online services will not be affected.',q:'What can people do while the library is closed?',o:['Use the online services','Borrow books inside','Return books at the front desk','Visit the library on 5 May']},
+  {s:'r',L:4,p:'Although remote work was once seen as a temporary solution, many companies now treat it as a permanent option. However, managers report that new employees often struggle to build relationships with colleagues when they rarely meet in person.',q:'According to the text, what is one disadvantage of remote work?',o:['New staff find it harder to connect with colleagues.','Companies spend more money on offices.','Managers no longer support it.','It can only be used for a short time.']},
+  {s:'r',L:5,p:"The author's scepticism stems not from a rejection of the data itself, but from the way it has been selectively presented to support a conclusion that was, in effect, reached in advance.",q:"What is the author's main criticism?",o:['The data was used to justify a conclusion decided beforehand.','The data itself is inaccurate.','The conclusion was reached too late.','The author distrusts all statistics.']},
+  // Tinglash (brauzer ovozi bilan o'qiladi)
+  {s:'l',L:1,a:'The bus leaves at half past seven.',q:'When does the bus leave?',o:['At 7:30','At 7:00','At 6:30','At 7:15']},
+  {s:'l',L:2,a:"Could you buy some milk and bread on your way home? We don't need any eggs.",q:'What does the speaker NOT need?',o:['Eggs','Milk','Bread','Anything else']},
+  {s:'l',L:3,a:"I was going to take the train, but it was fully booked, so I'm driving instead.",q:'How is the speaker travelling?',o:['By car','By train','By bus','On foot']},
+  {s:'l',L:4,a:"Had the forecast been accurate, we'd never have set off so early.",q:'What does the speaker imply?',o:['The forecast was wrong.','They left too late.','The forecast was correct.','They decided not to travel.']},
+  {s:'l',L:5,a:'Far from being a setback, the delay gave us the breathing space we needed to refine the proposal.',q:'How does the speaker see the delay?',o:['It was actually helpful.','It was a disaster.','It made them give up.','It had no effect at all.']},
+];
+const HAS_TTS = 'speechSynthesis' in window;
+const SECTIONS = [
+  {k:'g', name:'Grammatika', n:7, d:'Zamonlar, shart gaplar, majhul nisbat'},
+  {k:'v', name:"Lug'at", n:5, d:"So'zlar, iboralar, phrasal verb'lar"},
+  {k:'r', name:"O'qish", n:3, d:'Qisqa matnni tushunish'},
+  {k:'l', name:'Tinglash', n:3, d:'Gapni eshitib tushunish'},
+].filter(x => x.k !== 'l' || HAS_TTS);
+const TOTAL = SECTIONS.reduce((t, x) => t + x.n, 0);
+const CEFR = [
+  {l:'A1', name:'Beginner', ielts:'3.0 dan past', c:'Ingliz tili', t:"Siz ingliz tilini endi boshlayapsiz. General English kursining boshlang'ich guruhida asosiy grammatika va kundalik so'zlarni o'rganib, oddiy suhbat qurishni boshlaysiz."},
+  {l:'A2', name:'Elementary', ielts:'3.0–3.5', c:'Ingliz tili', t:"Oddiy gaplarni tushunasiz va asosiy zamonlarni bilasiz. Keyingi qadam — grammatikani mustahkamlash va ko'proq gapirish amaliyoti."},
+  {l:'B1', name:'Intermediate', ielts:'4.0–5.0', c:'IELTS', t:"Mustaqil foydalanuvchi darajasi. IELTS Full Course'ni boshlash uchun yetarli: 4 oylik intensiv kursda ballingizni tizimli oshirasiz."},
+  {l:'B2', name:'Upper-Intermediate', ielts:'5.5–6.5', c:'IELTS', t:"Murakkab matn va nutqni yaxshi tushunasiz. IELTS'da yuqori ball uchun Writing va Speaking strategiyalariga e'tibor qaratish kerak."},
+  {l:'C1', name:'Advanced', ielts:'7.0 va undan yuqori', c:'IELTS', t:"Juda yuqori daraja. Mock testlar va ustoz bilan Writing/Speaking tahlili orqali IELTS'da 7.0+ ballni mustahkamlaysiz."},
+];
+const ptBody = $('#ptBody'), ptTop = $('#ptTop'), ptBar = $('#ptBar');
+let st = null;
+const shuffle = a => { a = [...a]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const esc = t => t.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt = s => String(Math.floor(s / 60)).padStart(2, '0') + ':' + String(s % 60).padStart(2, '0');
+const ICONS = {
+  g:'<path d="M4 19V5h9a4 4 0 0 1 0 8H4m9 0a4 4 0 0 1 0 8H4"/>',
+  v:'<path d="M4 4h12l4 4v12H4z"/><path d="M8 11h8M8 15h6"/>',
+  r:'<path d="M3 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H3zM21 5h-6a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h7z"/>',
+  l:'<path d="M3 14v-2a9 9 0 0 1 18 0v2"/><path d="M21 15a2 2 0 0 1-2 2h-1v-5h3zM3 15a2 2 0 0 0 2 2h1v-5H3z"/>',
+};
+
+function ptIntro() {
+  ptTop.hidden = ptBar.hidden = true;
+  ptBody.innerHTML = `<div class="pt-intro">
+    <h3>${TOTAL} ta savol, taxminan ${Math.round(TOTAL * 0.55)} daqiqa. Natija darhol chiqadi.</h3>
+    <div class="pt-cards">${SECTIONS.map(x => `<div><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">${ICONS[x.k]}</svg><b>${x.name}</b><span>${x.n} ta savol. ${x.d}</span></div>`).join('')}</div>
+    <div class="pt-rules">
+      <span><b>To'g'ri javoblar</b> test oxirida ko'rsatiladi</span>
+      <span><b>"Bilmayman"</b> — taxmin qilgandan ko'ra aniqroq natija beradi</span>
+      ${HAS_TTS ? '<span><b>Tinglash</b> bo\'limi uchun ovozni yoqing</span>' : ''}
+      <span><b>Klaviatura:</b> 1–4 va Enter</span>
+    </div>
+    <button class="btn btn-y" id="ptStart">Testni boshlash</button>
+  </div>`;
+  $('#ptStart').onclick = ptStart;
+}
+
+function ptStart() {
+  st = {i:0, theta:2, hist:[], used:new Set(), ans:[], t0:Date.now(), sel:null, item:null, opts:[], plays:0, done:false};
+  ptTop.hidden = ptBar.hidden = false;
+  $('#ptTime').textContent = '00:00';
+  clearInterval(window.__ptT);
+  window.__ptT = setInterval(() => { $('#ptTime').textContent = fmt(Math.round((Date.now() - st.t0) / 1000)); }, 1000);
+  ptNext();
+}
+
+function secAt(i) { let n = 0; for (const x of SECTIONS) { n += x.n; if (i < n) return x; } }
+
+function ptNext() {
+  if (st.i >= TOTAL) return ptResult();
+  const sec = secAt(st.i);
+  const pool = BANK.filter(b => b.s === sec.k && !st.used.has(b));
+  const target = Math.round(st.theta);
+  const best = Math.min(...pool.map(b => Math.abs(b.L - target)));
+  const item = shuffle(pool.filter(b => Math.abs(b.L - target) === best))[0];
+  st.used.add(item); st.item = item; st.sel = null; st.plays = 0; st.opts = shuffle(item.o);
+  ptRender(sec);
+}
+
+function ptRender(sec) {
+  const it = st.item, si = SECTIONS.indexOf(sec);
+  $('#ptSec').innerHTML = SECTIONS.map((x, k) => `<span class="${k === si ? 'on' : k < si ? 'done' : ''}">${x.name}</span>`).join('');
+  $('#ptCount').textContent = `${st.i + 1} / ${TOTAL}`;
+  ptBar.firstElementChild.style.width = (st.i / TOTAL * 100) + '%';
+  const kicker = {g:"Bo'sh joyni to'ldiring", v:"Mos so'zni tanlang", r:"Matnni o'qing va savolga javob bering", l:'Gapni tinglang va savolga javob bering'}[it.s];
+  ptBody.innerHTML = `
+    <span class="pt-kicker">${sec.name}: ${kicker}</span>
+    ${it.p ? `<div class="pt-passage">${esc(it.p)}</div>` : ''}
+    ${it.a ? `<div class="pt-audio"><button class="pt-play" id="ptPlay" aria-label="Audioni tinglash"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l14 8-14 8z"/></svg></button><span id="ptPlays" style="color:var(--grey)">Tinglash uchun bosing — 2 marta eshitish mumkin</span></div>` : ''}
+    <p class="pt-q">${esc(it.q).replace('___', '<u>&nbsp;</u>')}</p>
+    <div class="pt-opts" role="radiogroup" aria-label="Javob variantlari">${st.opts.map((o, i) => `<button class="pt-opt" role="radio" aria-checked="false" data-i="${i}"><kbd>${i + 1}</kbd>${esc(o)}</button>`).join('')}</div>
+    <div class="pt-foot">
+      <button class="pt-link" id="ptSkip">Bilmayman</button>
+      <button class="btn btn-y" id="ptGo" disabled>${st.i + 1 === TOTAL ? 'Testni yakunlash' : 'Keyingi savol'}</button>
+    </div>`;
+  $$('#ptBody .pt-opt').forEach(b => b.onclick = () => ptSelect(+b.dataset.i));
+  $('#ptGo').onclick = () => ptSubmit(false);
+  $('#ptSkip').onclick = () => ptSubmit(true);
+  if (it.a) $('#ptPlay').onclick = ptSpeak;
+}
+
+function ptSpeak() {
+  if (st.plays >= 2) return;
+  const btn = $('#ptPlay');
+  speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(st.item.a);
+  u.lang = 'en-GB'; u.rate = 0.9;
+  const voices = speechSynthesis.getVoices();
+  const v = voices.find(v => /en-GB/i.test(v.lang)) || voices.find(v => /^en/i.test(v.lang));
+  if (v) u.voice = v;
+  u.onstart = () => btn.classList.add('speaking');
+  u.onend = () => { btn.classList.remove('speaking'); if (st.plays >= 2) btn.disabled = true; };
+  speechSynthesis.speak(u);
+  st.plays++;
+  $('#ptPlays').textContent = st.plays >= 2 ? 'Tinglash imkoniyati tugadi' : 'Yana 1 marta tinglash mumkin';
+}
+
+function ptSelect(i) {
+  st.sel = i;
+  $$('#ptBody .pt-opt').forEach((b, k) => b.setAttribute('aria-checked', k === i));
+  $('#ptGo').disabled = false;
+}
+
+function ptSubmit(skip) {
+  if (!skip && st.sel === null) return;
+  if (HAS_TTS) speechSynthesis.cancel();
+  const it = st.item, chosen = skip ? null : st.opts[st.sel], ok = chosen === it.o[0];
+  st.ans.push({it, chosen, ok});
+  st.theta = Math.max(1, Math.min(5, st.theta + (ok ? 0.5 : -0.5)));
+  st.hist.push(st.theta);
+  st.i++;
+  ptNext();
+}
+
+function ptResult() {
+  clearInterval(window.__ptT);
+  st.done = true;
+  const secs = Math.round((Date.now() - st.t0) / 1000);
+  ptBar.firstElementChild.style.width = '100%';
+  $('#ptSec').innerHTML = SECTIONS.map(x => `<span class="done">${x.name}</span>`).join('');
+  $('#ptCount').textContent = 'Yakunlandi';
+  // Daraja: oxirgi 6 ta javobdagi qobiliyat bahosining o'rtachasi
+  const tail = st.hist.slice(-6), est = tail.reduce((a, b) => a + b, 0) / tail.length;
+  const idx = Math.max(0, Math.min(4, Math.round(est) - 1));
+  const R = CEFR[idx];
+  // Ko'nikma bahosi qiyinlikni hisobga oladi: qiyin savolga to'g'ri javob ko'proq ball beradi
+  const skills = SECTIONS.map(x => {
+    const a = st.ans.filter(r => r.it.s === x.k);
+    const got = a.reduce((t, r) => t + (r.ok ? r.it.L : 0), 0);
+    return {name:x.name, v: a.length ? Math.round(got / (a.length * 5) * 100) : 0};
+  });
+  const right = st.ans.filter(r => r.ok).length;
+  ptBody.innerHTML = `
+    <div class="pt-res">
+      <div>
+        <span class="pt-kicker">Sizning darajangiz (CEFR)</span>
+        <div class="pt-lvl">${R.l}</div>
+        <div class="pt-lvlname">${R.name}</div>
+        <p>${R.t}</p>
+        <div class="pt-kv">
+          <div><span>Taxminiy IELTS</span><b>${R.ielts}</b></div>
+          <div><span>Tavsiya etilgan kurs</span><b>${R.c === 'IELTS' ? 'IELTS Full Course' : 'General English'}</b></div>
+          <div><span>To'g'ri javoblar</span><b>${right} / ${TOTAL}</b></div>
+          <div><span>Sarflangan vaqt</span><b>${fmt(secs)}</b></div>
+        </div>
+      </div>
+      <div class="pt-skills">
+        <h4>Ko'nikmalar bo'yicha natija (100 ballik)</h4>
+        ${skills.map(k => `<div class="pt-skill"><span>${k.name}</span><span class="tr"><i data-w="${k.v}"></i></span><em>${k.v}</em></div>`).join('')}
+        <div class="pt-scale" aria-label="CEFR shkalasi">${CEFR.map((c, i) => `<span class="${i === idx ? 'on' : ''}">${c.l}</span>`).join('')}</div>
+        <div class="pt-actions">
+          <button class="btn btn-y" id="ptEnroll">Natija bilan bepul darsga yozilish</button>
+          <button class="btn btn-o" id="ptRev">Javoblarni ko'rish</button>
+          <button class="pt-link" id="ptAgain">Qayta topshirish</button>
+        </div>
+      </div>
+    </div>
+    <ol class="pt-review" id="ptReview">${st.ans.map((r, n) => `<li><i class="${r.ok ? 'ok' : 'no'}">${r.ok ? '✓' : '✕'}</i><div>${n + 1}. ${esc(r.it.q)}${r.it.a ? `<small>Audio: "${esc(r.it.a)}"</small>` : ''}<small>Sizning javobingiz: ${r.chosen ? esc(r.chosen) : 'Bilmayman'}${r.ok ? '' : ` · To'g'ri javob: <b style="color:var(--white)">${esc(r.it.o[0])}</b>`}</small></div></li>`).join('')}</ol>
+    <p class="pt-note">Bu test darajangizni taxminan aniqlaydi va rasmiy sertifikat emas. Aniq daraja bepul sinov darsida ustoz bilan og'zaki suhbatda tasdiqlanadi.</p>`;
+  setTimeout(() => $$('.pt-skill .tr i').forEach(i => i.style.width = i.dataset.w + '%'), 80);
+  $('#ptEnroll').onclick = () => {
+    $('#formLevel').value = `${R.l} (${R.name})`;
+    const n = $('#levelNote'); n.textContent = `Test natijangiz: ${R.l} (${R.name}). U arizaga qo'shiladi.`; n.classList.add('show');
+    pickCourse(R.c);
+  };
+  $('#ptRev').onclick = () => { const r = $('#ptReview'); r.classList.toggle('show'); $('#ptRev').textContent = r.classList.contains('show') ? 'Javoblarni yashirish' : "Javoblarni ko'rish"; };
+  $('#ptAgain').onclick = ptStart;
+  $('#pt').scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block:'start'});
+}
+
+addEventListener('keydown', e => {
+  if (!st || st.done || e.target.matches('input,select,textarea')) return;
+  const r = $('#pt').getBoundingClientRect(); if (r.top > innerHeight || r.bottom < 0) return;
+  const n = +e.key;
+  if (n >= 1 && n <= st.opts.length) ptSelect(n - 1);
+  else if (e.key === 'Enter' && st.sel !== null && !e.target.matches('button')) { e.preventDefault(); ptSubmit(false); }
+});
+if (HAS_TTS) speechSynthesis.getVoices();
+ptIntro();
+
+// IELTS band
+const P = ['Listening', 'Reading', 'Writing', 'Speaking'], V = {Listening:7, Reading:6.5, Writing:6, Speaking:6.5};
+$('#sliders').innerHTML = P.map(p => `<div class="sl"><label for="r${p}">${p}<b id="v${p}">${V[p].toFixed(1)}</b></label><input id="r${p}" type="range" min="0" max="9" step="0.5" value="${V[p]}" data-p="${p}"></div>`).join('');
+$$('#sliders input').forEach(r => r.oninput = () => { V[r.dataset.p] = +r.value; $('#v' + r.dataset.p).textContent = (+r.value).toFixed(1); calc(); });
+function calc() {
+  const band = Math.round(P.reduce((s, p) => s + V[p], 0) / 4 * 2) / 2; // .25 -> .5, .75 -> keyingi butun son
+  $('#bandOut').textContent = band.toFixed(1);
+  const weak = P.reduce((a, b) => V[a] <= V[b] ? a : b);
+  $('#bandMsg').textContent = band >= 7 ? `Ko'plab xorijiy universitetlar talab qiladigan ball. Eng past bo'lim: ${weak}.` : `Eng past bo'lim — ${weak}. Uni ko'tarish umumiy ballga eng tez ta'sir qiladi.`;
+}
+calc();
+
+// ariza
+$('#form').addEventListener('submit', async e => {
+  e.preventDefault();
+  const f = e.target, st = $('#status'), d = Object.fromEntries(new FormData(f));
+  st.classList.add('show');
+  if (!d.name.trim() || d.phone.replace(/\D/g, '').length < 9) { st.textContent = "Ismingizni va to'liq telefon raqamingizni kiriting, masalan +998 95 145 11 45."; return; }
+  const tel = d.branch === 'Maksim Gorkiy' ? ['+998951959195', '(95) 195-9-195'] : ['+998951451145', '(95) 145-1-145'];
+  if (!FORM_ENDPOINT) { st.innerHTML = `Onlayn ariza hozircha ulanmagan. "${d.course}" kursiga yozilish uchun <a href="tel:${tel[0]}">${tel[1]}</a> raqamiga qo'ng'iroq qiling.`; return; }
+  try {
+    const r = await fetch(FORM_ENDPOINT, {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(d)});
+    if (!r.ok) throw 0;
+    st.textContent = `Ariza yuborildi, ${d.name}. Administrator ${d.phone} raqamiga qo'ng'iroq qiladi.`; f.reset();
+  } catch { st.innerHTML = `Ariza yuborilmadi. Internetni tekshirib qayta urinib ko'ring yoki <a href="tel:${tel[0]}">${tel[1]}</a> raqamiga qo'ng'iroq qiling.`; }
+});
+</script>
+</body>
+</html>
